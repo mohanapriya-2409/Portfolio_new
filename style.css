@@ -103,7 +103,7 @@ nav {
     top: 110%;
     right: 0;
     background-color:transparent;
-    width: fit-content;
+    width:fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
@@ -111,7 +111,7 @@ nav {
   
   .menu-links a {
     display: block;
-    padding: 15px 10px;
+    padding: 10px;
     text-align: center;
     font-size: 1.5rem;
     color: black;
@@ -125,7 +125,7 @@ nav {
   }
   
   .menu-links.open {
-    max-height: 300px;
+    max-height: 500px;
     display: flex;
     flex-direction: column; /* Ensure vertical stacking */
     align-items: center; /* Center the items */
