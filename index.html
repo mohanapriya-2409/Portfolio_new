@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA COMPATIBLE" content="IE-EDGE">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "tBIe2F_ck7DMnEfK1",
+        });
+      })();
+      </script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">MOHANA PRIYA V</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">TechStacks</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">MOHANA PRIYA V</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">TechStacks</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="home">
+        <div class="section__pic-container">
+          <img src="profile.jpg" alt="profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">  MOHANA PRIYA V</h1>
+          <p class="section__text__p2">Software Engineer</p>
+          <div class="btn-container">
+            <button style="background-color: antiquewhite ; font-weight: bold;animation: blinking 1s infinite;" 
+              class="btn btn-color-2"onclick="window.open('Mohanapriya_V.pdf')">Download CV
+            </button>
+            <button style="background-color: antiquewhite;font-weight: bold;animation: blinking 1s infinite;" class="btn btn-color-1" onclick="location.href='#contact'">Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <a href="https://www.linkedin.com/in/mohanapriya-v-2493p/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/mohanapriya-2409"><i class='bx bxl-github'></i></a>
+            
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <!-- About Details Container -->
+          <div class="about-details-container">
+            <!-- Education Section -->
+            <div class="edu-section">
+              <img src="education.png" alt="Education icon" class="aicon" />
+              <h3>Education</h3>
+              <div class="edu">
+                <!-- School Information -->
+                <div class="school">
+                  <div class="content">
+                    
+                    <dl>
+                      <dt>Hussain Memorial School</dt>
+                      <dd>- SSLC with 94%</dd>
+                      <dt>Sethu Bhaskara School</dt>
+                      <dd>- HSC with 95%</dd>
+                    </dl>
+                  </div>
+                </div>
+                <!-- College Information -->
+                <div class="college">
+                  <div class="content">
+                    <dl>
+                      <dt>Rajalakshmi Engineering College</dt>
+                      <dd>- Specialized in IT</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- About Text Section -->
+            <div class="text-container">
+              <p>
+                Budding Software Engineer pursuing my undergraduate degree in REC, specialized in BTech Information Technology. 
+                I'm an optimistic and determined person eagerly waiting to collaborate with tech enthusiasts all around. 
+                I aim to contribute to an organization where I can achieve personal growth while supporting its success. 
+                With a proactive attitude and strong work ethic, I am eager to use my skills for mutual growth and success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Tech Stacks</h1>
+        <div class="experience-details-container">
+            <div class="grid-container">
+                <!-- HTML -->
+                <div class="tech-box">
+                    <img src="html.png" alt="HTML Icon" class="icon"/>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                </div>
+                <!-- CSS -->
+                <div class="tech-box">
+                    <img src="css.png" alt="CSS Icon" class="icon" />
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                </div>
+                <!-- Python -->
+                <div class="tech-box">
+                    <img src="python.jpeg" alt="Python Icon" class="icon" />
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                </div>
+                <div class="tech-box">
+                  <img src="tf.png" alt="Tensorflow icon" class="icon" />
+                  <h3>Tensorflow</h3>
+                  <p>Basic</p>
+              </div>
+                <!-- JavaScript -->
+                <div class="tech-box">
+                    <img src="js.jpeg" alt="JS Icon" class="icon" />
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                </div>
+                
+                <!-- MongoDB -->
+                <div class="tech-box">
+                    <img src="mongo.png" alt="Mongo Icon" class="icon" />
+                    <h3>MongoDB</h3>
+                    <p>Basic</p>
+                </div>
+                
+                <!-- Java -->
+                <div class="tech-box">
+                    <img src="java.png" alt="Java Icon" class="icon" />
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="tech-box">
+                  <img src="rpa.png" alt="RPA Icon" class="icon" />
+                  <h3>RPA</h3>
+                  <p>Basic</p>
+                </div>
+                <div class="tech-box" >
+                  <img src="open_cv.png" alt="OpencvIcon" class="icon" />
+                  <h3>Opencv</h3>
+                  <p>Basic</p>
+              </div>
+                
+                <!-- GIT-->
+                <div class="tech-box" >
+                    <img src="git.png" alt="GIt Icon" class="icon" />
+                    <h3>GIT</h3>
+                    <p>Experienced</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+      <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="project_1.png" alt="SMART WEIGH SCALE DETECTION" class="project-image">
+                <h5 style="margin-top: 10px;">Smart Weigh Scale Detection</h5>
+                <p>Smart Weight Scale Detection is an IoT-based system that uses machine learning and object detection to accurately identify and measure objects. It leverages ESP32 for control and TensorFlow for efficient and scalable detection, ensuring precision and reliability.</p>
+            </div>
+            <div class="project-box">
+                <img src="project_2.jpg" alt="Automated College Administration Using UiPath" class="project-image">
+                <h5 style="margin-top: 10px;">Automated College Administration Using UiPath</h5>
+                <p>Automated College Administration using UiPath streamlines administrative tasks by automating processes like messaging, data entry, and report generation. It enhances efficiency, reduces errors, and saves time for staff and students.</p>
+            </div>
+            <div class="project-box">
+                <img src="project_3.png" alt="Drowsiness Detection" class="project-image">
+                <h5 style="margin-top: 10px;">Drowsiness Detection Using Python Opencv</h5>
+                <p>A system that monitors a person's eye movements using OpenCV in Python to detect signs of fatigue and issues alerts to prevent accidents.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <form id="contact-form" autocomplete="on">
+          <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button style="margin-top:20px;"type="submit" class="btn btn-primary" id="submit-button">Send Message</button>
+      </form>
+  </section>
+  <script src="r.js"></script> 
+     <footer style="text-align: center">
+        <p>&copy; 2025 MOHANA PRIYA V. All rights reserved.</p>
+      </footer>   
+</body>
+</html>
